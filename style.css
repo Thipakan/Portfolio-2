@@ -1,8 +1,10 @@
 /* Styles for header */
 header {
-    background-color: #333; /* Couleur de fond pour l'en-tête */
-    padding: 20px 0;
-    text-align: center;
+    background-color: grey;
+    display: flex;
+    justify-content: space-between; /* Répartit l'espace entre les éléments */
+    align-items: center; /* Centre verticalement les éléments */
+    padding: 20px 40px; /* Ajoute du padding pour l'espace intérieur */
 }
 
 h2 {
