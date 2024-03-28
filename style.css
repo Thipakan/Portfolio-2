@@ -104,28 +104,40 @@ h2 {
     width: 50px;
     margin-left: 10px;
 }
-footer{
-    background-color: rgba(128, 128, 128, 0.466);
+/* Styles pour le footer */
+footer {
+    background-color: rgba(128, 128, 128, 0.466); /* Couleur de fond pour le footer */
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
 }
 
-footer h1{
-    margin-left: 700px;
-    margin-top: 0px;
-    /*color: white;*/
+footer h1 {
+    margin-top: 0;
 }
 
-
-.fa-brands{
-    margin-left: 400px;
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Espacement égal entre les éléments */
+    align-items: center; /* Centrage vertical */
+    max-width: 1200px; /* Largeur maximale pour le contenu du footer */
+    margin: 0 auto; /* Centrage horizontale */
 }
 
-.fa-solid{
-    margin-left: 300px;
+.social-icons {
+    display: flex;
 }
-.fa-brands:hover,
-.fa-solid:hover {
+
+.social-icons a {
+    margin: 0 10px; /* Espacement entre les icônes */
+    color: #fff; /* Couleur par défaut */
+    transition: color 0.3s ease; /* Transition de couleur au survol */
+}
+
+.social-icons a:hover {
     color: #ff7f0e; /* Couleur au survol */
 }
+
 
 /* Animation de survol pour les liens */
 .contenair_links a {
