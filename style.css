@@ -108,3 +108,35 @@ footer a {
 footer a:hover {
     text-decoration: underline; /* Soulignement au survol des liens */
 }
+
+
+/* Animation de survol pour les liens */
+.contenair_links a {
+    transition: color 0.3s ease; /* Transition de couleur au survol */
+}
+
+.contenair_links a:hover {
+    color: #ff7f0e; /* Couleur au survol */
+}
+
+/* Animation de zoom pour les images du portfolio */
+.projet img {
+    transition: transform 0.3s ease; /* Transition de transformation au survol */
+}
+
+.projet img:hover {
+    transform: scale(1.1); /* Zoom sur l'image au survol */
+}
+
+/* Animation d'apparition pour les sections */
+#presentation, #portfolio, footer {
+    opacity: 0; /* Définir l'opacité initiale à 0 */
+    transform: translateY(20px); /* Déplacer les sections vers le bas */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transition d'opacité et de transformation */
+}
+
+/* Lorsque la section devient visible */
+#presentation.visible, #portfolio.visible, footer.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
