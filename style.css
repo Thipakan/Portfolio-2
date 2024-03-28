@@ -1,203 +1,110 @@
-header{
+/* Styles for header */
+header {
     background-color: grey;
 }
 
-
-.nav_bar{
+.nav_bar {
     margin-left: 80%;
     margin-top: -35px;
 }
 
-.contenair_links
-    {
-        /*margin-left: -400px;*/
-        margin-right: 100px;
-    }
+.contenair_links {
+    margin-right: 100px;
+}
 
-
-#Presentation{
-        background-color: white;
-        flex-direction: row ;
-        justify-content: space-between;
-        align-items: center;
-        /*margin-right: 20px;*/
-        gap: 10%;
-        /*margin-left: -370px;*/
-        margin-right: 100px;
-        margin-bottom: 20px;
-        margin-top: 20%;
-        /*height: 300px;*/
-    }
-
-.link_nav{
-   /* margin-bottom: 80%;*/
-    }
-
-.link_nav:hover
-    {
+.link_nav:hover {
     border-top: 2px solid white;
     border-bottom: 2px solid #0065FC;
-    color:#0065FC;
-    }
+    color: #0065FC;
+}
 
-
-
-.main-nav {
-    display: flex;
-    flex-direction: row;
-  }
-  
-.push {
-    margin-left: auto;
-  }
-
-
-.haut{
+/* Styles for haut */
+.haut {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     height: 500px;
     width: 100%;
-
-    background-size: 100% 500px;
-
-    background-image: url("images/Capture d'écran dev web.png")
-
-}  
+    background: url("images/Capture d'écran dev web.png") no-repeat center;
+    background-size: cover;
+    color: white;
+}
 
 .haut h1 {
     margin-top: 225px;
-    color: white;
 }
 
-.haut h2 {
-    color: white;
-}
-
-
-#presentation{
+/* Styles for presentation section */
+#presentation {
     background-color: black;
     display: flex;
     flex-direction: column;
-    height: 400px;
+    align-items: center;
+    padding: 20px 0;
 }
 
-#presentation h1{
+#presentation h1,
+#presentation h3 {
     color: white;
     margin-left: 25px;
 }
 
-#presentation h3{
-    color: white;
-    margin-left: 50px;
-}
-
-
-.presentation1{
-    display: flex;
-    flex-direction: row;
-}
-
-.photo{
-    margin-left: 25px;
-}
-
-#portfolio{
+/* Styles for portfolio section */
+#portfolio {
     background-color: rgba(0, 0, 0, 0.747);
     display: flex;
     flex-direction: column;
-    height: 600px;
+    align-items: center;
+    padding: 20px 0;
 }
 
-#portfolio h1{
+#portfolio h1,
+#portfolio h2 {
     color: white;
     margin-left: 25px;
 }
 
-#portfolio h2{
-    color: white;
-    margin-left: 25px;
+.projets {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.projets{
-  display: flex;
-  flex-direction: row;
+.projet1,
+.projet2,
+.projet5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    color: white;
 }
 
-.projet1{
-    display: flex;
-    flex-direction: column;
-    padding: 50px 50px 50px 50px;
-    /*background-color: rgba(0, 0, 0, 0.13);*/
-    color: white;
-  }
-
-.projet2{
-    display: flex;
-    flex-direction: column;
-    padding: 50px 50px 50px 50px;
-    /*background-color: rgba(0, 0, 0, 0.13);*/
-    color: white;
-  }
-
-.projet1 img{
+.projet1 img,
+.projet5 img {
     height: 80px;
     width: 300px;
 }
 
-.projet5{
-    display: flex;
-    flex-direction: column;
-    padding: 50px 50px 50px 50px;
-    /*background-color: rgba(0, 0, 0, 0.13);*/
+.resume-download {
     color: white;
-  }
-
-.projet5 img{
-    height: 80px;
-    width: 300px;
+    margin: 20px;
+    text-align: center;
 }
 
-
-.p5{
-    display: flex;
-    flex-direction: column;
-}
-
-.p5 h2{
-    margin-left: 30%;
-}
-
-
-.resume-download{
-    margin-left: 450px;
-    color: white;
-}
-
-.pdf-logo{
+.pdf-logo {
     height: 25px;
     width: 25px;
-    margin-left: 250px;
+    margin-left: 10px;
 }
 
-
-
-footer{
+/* Styles for footer */
+footer {
     background-color: rgba(128, 128, 128, 0.466);
+    text-align: center;
+    padding: 20px 0;
 }
 
-footer h1{
-    margin-left: 700px;
-    margin-top: 0px;
-    /*color: white;*/
-}
-
-
-.fa-brands{
-    margin-left: 400px;
-}
-
-.fa-solid{
-    margin-left: 300px;
+footer h1 {
+    color: white;
 }
