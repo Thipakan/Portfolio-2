@@ -104,7 +104,6 @@ h2 {
     width: 50px;
     margin-left: 10px;
 }
-
 /* Styles pour le footer */
 footer {
     background-color: #333; /* Couleur de fond pour le footer */
@@ -113,14 +112,13 @@ footer {
     text-align: center;
 }
 
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+h1 {
+    margin-bottom: 20px; /* Espacement entre le titre et les icônes */
 }
 
 .social-icons {
-    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Alignement horizontal des icônes */
 }
 
 .social-icons a {
@@ -133,7 +131,6 @@ footer {
 .social-icons a:hover {
     color: #ff7f0e; /* Couleur au survol */
 }
-
 
 /* Animation de survol pour les liens */
 .contenair_links a {
