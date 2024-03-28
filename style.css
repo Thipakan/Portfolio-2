@@ -47,6 +47,19 @@ h2 {
     align-items: center;
 }
 
+/* Styles pour l'animation de la machine à écrire */
+.typing::after {
+    content: '|'; /* Afficher un curseur clignotant après le texte */
+    animation: typing 1s steps(1) infinite;
+}
+
+@keyframes typing {
+    0% { content: ""; } /* Commencer avec du texte vide */
+    50% { content: "Codage en cours..."; } /* Texte à mi-chemin */
+    100% { content: "Codage en cours..."; } /* Texte complet */
+}
+
+
 .presentation1 .photo {
     margin-bottom: 20px;
 }
