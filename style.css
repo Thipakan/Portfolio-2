@@ -1,110 +1,110 @@
 /* Styles for header */
 header {
-    background-color: grey;
+    background-color: #333; /* Couleur de fond pour l'en-tête */
+    padding: 20px 0;
+    text-align: center;
+}
+
+h2 {
+    color: #fff; /* Couleur du texte pour les en-têtes */
 }
 
 .nav_bar {
-    margin-left: 80%;
-    margin-top: -35px;
+    margin-top: 10px;
 }
 
-.contenair_links {
-    margin-right: 100px;
+.contenair_links a {
+    margin-right: 20px; /* Espacement entre les liens dans la barre de navigation */
+    color: #fff; /* Couleur du texte pour les liens */
+    text-decoration: none;
 }
 
-.link_nav:hover {
-    border-top: 2px solid white;
-    border-bottom: 2px solid #0065FC;
-    color: #0065FC;
+.contenair_links a:hover {
+    color: #ff7f0e; /* Couleur du texte au survol des liens */
 }
 
 /* Styles for haut */
 .haut {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 500px;
-    width: 100%;
-    background: url("images/Capture d'écran dev web.png") no-repeat center;
+    background-image: url("images/Capture d'écran dev web.png");
     background-size: cover;
-    color: white;
-}
-
-.haut h1 {
-    margin-top: 225px;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
 }
 
 /* Styles for presentation section */
 #presentation {
-    background-color: black;
+    background-color: #222; /* Couleur de fond pour la section de présentation */
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.presentation1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0;
 }
 
-#presentation h1,
-#presentation h3 {
-    color: white;
-    margin-left: 25px;
+.presentation1 .photo {
+    margin-bottom: 20px;
 }
 
 /* Styles for portfolio section */
 #portfolio {
-    background-color: rgba(0, 0, 0, 0.747);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0;
-}
-
-#portfolio h1,
-#portfolio h2 {
-    color: white;
-    margin-left: 25px;
+    background-color: #444; /* Couleur de fond pour la section du portfolio */
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
 }
 
 .projets {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.projet1,
-.projet2,
-.projet5 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px;
-    color: white;
-}
-
-.projet1 img,
-.projet5 img {
-    height: 80px;
+.projet {
     width: 300px;
-}
-
-.resume-download {
-    color: white;
-    margin: 20px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
+.projet img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Coins arrondis pour les images */
+    transition: transform 0.3s ease; /* Transition pour l'effet de survol */
+}
+
+.projet img:hover {
+    transform: scale(1.1); /* Zoom sur l'image au survol */
+}
+
+.resume-download {
+    margin-top: 50px;
+}
+
 .pdf-logo {
-    height: 25px;
-    width: 25px;
+    height: 50px;
+    width: 50px;
     margin-left: 10px;
 }
 
 /* Styles for footer */
 footer {
-    background-color: rgba(128, 128, 128, 0.466);
-    text-align: center;
+    background-color: #333; /* Couleur de fond pour le pied de page */
+    color: #fff;
     padding: 20px 0;
+    text-align: center;
 }
 
-footer h1 {
-    color: white;
+footer a {
+    color: #ff7f0e; /* Couleur des liens dans le pied de page */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Soulignement au survol des liens */
 }
