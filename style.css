@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: grey;
     color: white;
     padding: 20px 0;
 }
@@ -25,7 +25,8 @@ header h2 {
 }
 
 .nav_bar {
-    margin-left: auto;
+    margin-left: 80%;
+    margin-top: -35px;
 }
 
 .nav_bar .link_nav {
@@ -36,7 +37,9 @@ header h2 {
 }
 
 .nav_bar .link_nav:hover {
-    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    border-bottom: 2px solid #0065FC;
+    color:#0065FC;
 }
 
 main {
@@ -53,7 +56,6 @@ section h1 {
 
 .projets {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
 }
@@ -69,6 +71,7 @@ section h1 {
 
 .projet:hover {
     transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .projet img {
@@ -76,24 +79,37 @@ section h1 {
     border-radius: 4px;
 }
 
-footer {
-    background-color: #333;
+.resume-download {
+    margin-left: 450px;
     color: white;
+}
+
+.pdf-logo {
+    height: 25px;
+    width: 25px;
+    margin-left: 250px;
+}
+
+footer {
+    background-color: rgba(128, 128, 128, 0.466);
     padding: 50px 0;
     text-align: center;
 }
 
-footer .contact-icons {
+footer h1 {
+    margin-top: 0;
+}
+
+.contact-icons {
     margin-bottom: 20px;
 }
 
-footer .contact-icons a {
+.contact-icons a {
     color: white;
     margin: 0 10px;
+    transition: transform 0.3s ease;
 }
 
-.footer-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
+.contact-icons a:hover {
+    transform: scale(1.2);
 }
