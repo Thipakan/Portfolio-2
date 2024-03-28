@@ -110,7 +110,6 @@ footer {
     color: #fff;
     padding: 40px 0;
     text-align: center;
-    margin-left: 700px;
 }
 
 h1 {
@@ -122,8 +121,11 @@ h1 {
     justify-content: center; /* Alignement horizontal des icônes */
 }
 
-.social-icons a {
+.social-icons span {
     margin: 0 15px; /* Espacement entre les icônes */
+}
+
+.social-icons a {
     color: #fff;
     text-decoration: none;
     transition: color 0.3s ease; /* Transition de couleur */
