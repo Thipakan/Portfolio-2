@@ -159,11 +159,23 @@ footer {
     transform: scale(1.1); /* Zoom sur l'image au survol */
 }
 
-/* Animation d'apparition pour les sections */
+/* Animation d'entrée pour les sections */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Appliquer l'animation aux sections avec une durée plus longue */
 #presentation, #portfolio, footer {
     opacity: 0; /* Définir l'opacité initiale à 0 */
     transform: translateY(20px); /* Déplacer les sections vers le bas */
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Transition d'opacité et de transformation */
+    animation: fadeInUp 2s ease forwards; /* Appliquer l'animation avec une durée de 1 seconde */
 }
 
 /* Lorsque la section devient visible */
