@@ -1,73 +1,76 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Thipakan</title>
+    <script src="https://kit.fontawesome.com/4845a95a7f.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header>
-        <div class="container">
-            <h2>Thipakan Sriranjan</h2>
-            <nav class="nav_bar">
-                <a href="#presentation" class="link_nav">Présentation</a>      
+        <h2>Thipakan Sriranjan</h2>
+        <nav class="nav_bar">
+            <div class="contenair_links"> 
+                <a href="#presentation" class="link_nav">Presentation</a>      
                 <a href="#portfolio" class="link_nav">Portfolio</a>            
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
 
-    <main>
-        <section id="presentation">
-            <h1>Présentation</h1>
-            <div class="presentation">
-                <div class="photo">
-                    <img src="images/photo_profil.png" alt="photo de profil">
-                </div>
-                <p>Bonjour je m'appelle Thipakan Sriranjan. Je viens de finir ma formation de développeur web junior avec Openclassrooms. J'ai réalisé plusieurs projets professionnels. Cette formation m'a permis de développer mes compétences front-end en HTML, CSS et JavaScript mais également de coder côté backend grâce à Node.js.</p>
-            </div>
-        </section>
+    <div class="haut">
+        <h1>Thipakan Sriranjan</h1>
+        <h2>Développeur web</h2>
+    </div>
 
-        <section id="portfolio">
-            <h1>Portfolio</h1>
-            <h2>Voici quelques exemples de projets professionnels réalisés</h2>
-            <div class="projets">
-                <div class="projet">
-                    <a href="https://thipakan.github.io/Projet-2/" target="_blank"><img src="images/logo_booki.png" alt="Logo Booki"></a>
-                    <h3>Ce projet consiste à coder la maquette d'un site de location d'hébergements et à le rendre responsive</h3>
-                </div>
-                <div class="projet">
-                    <a href="https://thipakan.github.io/Projet-3/" target="_blank"><img src="images/logo_ohmyfood.png" alt="Logo OhMyFood"></a>
-                    <h3>Ce projet consiste à coder un site mobile first et à ajouter des animations CSS</h3>
-                </div>
-                <div class="projet">
-                    <a href="Projet5.html" target="_blank"><img src="images/logo_kanap.png" alt="Logo Kanap"></a>
-                    <h3>Ce projet consiste à faire évoluer un site de e-commerce pour une marque de canapés en utilisant JavaScript</h3>
-                </div>
+    <div id="presentation">
+        <h1>Présentation</h1>
+        <div class="presentation1">
+            <div class="photo">
+                <!-- Utilisation d'un chemin relatif pour l'image -->
+                <img src="images/photo profil.png" alt="photo de profil">
             </div>
-            <div class="resume-download">
-                <h3>Vous pouvez également télécharger mon CV en format PDF ci-dessous.</h3>
-                <a href="CV_Thipakan_Sriranjan.pdf" target="_blank"><img class="pdf-logo" src="images/image_pdf.png" alt="Logo PDF"></a>
+            <h3>Bonjour je m'appelle Thipakan Sriranjan. Je viens de finir ma formation de développeur web junior avec Openclassrooms.
+                J'ai réalisé plusieurs projets professionnels. Cette formation m'a permis de développer mes compétences front-end en HTML
+                , CSS et Javascript mais également de coder côté backend grâce à NodeJS</h3>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <h1>Portfolio</h1>
+        <h2>Voici quelques exemples de projets professionnels réalisés</h2>
+        <div class="projets">
+            <div class="projet1">
+                <!-- Utilisation de chemins relatifs pour les images -->
+                <a href="https://thipakan.github.io/Projet-2/" target="_blank"><img src="images/logo booki.png" alt="Logo Booki"></a>
+                <h3>Ce projet consiste à coder la maquette <br /> d'un site de location d'hébergements <br /> et à le rendre responsive</h3>
             </div>
-        </section>
-    </main>
+            <div class="projet2">
+                <a href="https://thipakan.github.io/Projet-3/" target="_blank"><img src="images/logo ohmyfood.png" alt="Logo OhMyFood"></a>
+                <h3>Ce projet consiste à coder un site <br /> mobile first et à ajouter <br /> des animations CSS</h3>
+            </div>
+            <div class="projet5">
+                <a href="Projet 5.html" target="_blank"><img src="images/logo Kanap.png" alt="Logo Kanap"></a>
+                <h3>Ce projet consiste à faire évoluer un <br/> site de e commerce pour une marque de canapés <br/> en utilisant le javascript</h3>
+            </div>
+        </div>
+        <div class="resume-download">
+            <h3>Vous pouvez également télécharger mon CV en format pdf si dessous.</h3>
+            <!-- Utilisation d'un chemin relatif pour l'image PDF -->
+            <a href="CV_2023-11-28_Thipakan_Sriranjan.pdf" target="_blank"><img class="pdf-logo" src="images/image pdf.png" alt="Logo PDF"></a>
+        </div>
+    </div>
 
     <footer>
-        <div class="container">
-            <h1>Me contacter</h1>
-            <div class="contact-icons">
-                <a href="https://github.com/Thipakan" target="_blank"><i class="fab fa-github fa-3x"></i></a>
-                <a href="mailto:thipakan.sriranjan@gmail.com"><i class="fas fa-envelope fa-3x"></i></a>
-                <a href="tel:+33783355402"><i class="fas fa-phone fa-3x"></i></a>
-            </div>
-            <nav class="footer-nav">
-                <a href="#presentation">Présentation</a>
-                <a href="#portfolio">Portfolio</a>
-            </nav>
-        </div>
+        <h1>Me contacter</h1>
+        <a href="https://github.com/Thipakan" target="_blank">
+            <i class="fa-brands fa-github fa-3x"></i>
+        </a>
+        <a href="mailto:thipakan.sriranjan@gmail.com">
+            <i class="fa-solid fa-envelope fa-3x"></i>
+        </a>
+        <a href="tel:+33783355402">
+            <i class="fa-solid fa-phone fa-3x"></i>
+        </a>
     </footer>
-
-</body>
-</html>
