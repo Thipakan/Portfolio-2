@@ -106,6 +106,119 @@ h2 {
     width: 50px;
     margin-left: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Styles pour la section Compétences */
+#competences {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.competences-liste {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.competence {
+    width: 150px;
+    margin: 20px;
+}
+
+.competence i {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #007bff; /* Couleur de l'icône */
+}
+
+.competence span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.barre-progress {
+    background-color: #ddd; /* Couleur de fond de la barre de progression */
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Animations pour les barres de progression */
+.barre-html {
+    width: 100%; /* Barre de progression HTML au maximum */
+    background-color: #007bff; /* Couleur de la barre de progression HTML */
+    height: 100%;
+}
+
+.barre-css {
+    width: 100%; /* Barre de progression CSS au maximum */
+    background-color: #007bff; /* Couleur de la barre de progression CSS */
+    height: 100%;
+}
+
+.barre-js {
+    width: 80%;
+    background-color: #007bff; /* Couleur de la barre de progression JavaScript */
+    height: 100%;
+}
+
+.barre-php {
+    width: 70%; 
+    background-color: #007bff; /* Couleur de la barre de progression PHP */
+    height: 100%;
+}
+
+.barre-mysql {
+    width: 60%; 
+    background-color: #007bff; /* Couleur de la barre de progression MySQL */
+    height: 100%;
+}
+
+.barre-csharp {
+    width: 50%; 
+    background-color: #007bff; /* Couleur de la barre de progression C# */
+    height: 100%;
+}
+
+.barre-wordpress {
+    width: 90%; 
+    background-color: #007bff; /* Couleur de la barre de progression WordPress */
+    height: 100%;
+}
+@keyframes html-animation {
+    from { width: 0%; }
+    to { width: 90%; } /* Ajustez la largeur finale en fonction du niveau de compétence */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Styles pour le footer */
 footer {
     background-color: #333; /* Nouvelle couleur de fond pour le footer */
