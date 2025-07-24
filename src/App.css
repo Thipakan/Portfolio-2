@@ -1,0 +1,432 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- HEADER ---------- */
+header {
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.nav_bar {
+  display: flex;
+  gap: 30px;
+}
+
+.link_nav {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-left: 30px;
+}
+
+.link_nav:hover {
+  border-top: 2px solid white;
+  border-bottom: 2px solid #0065FC;
+  color: #0065FC;
+}
+
+/* ---------- HERO ---------- */
+.haut {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background-color: #0f2027;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.haut h1, .haut h2 {
+  position: relative;
+  margin: 0;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  z-index: 1;
+}
+
+.haut h1 {
+  font-size: 3.5rem;
+}
+
+.haut h2 {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+
+/* ---------- PRÉSENTATION ---------- */
+#presentation {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  color: #f1f1f1;
+  font-family: 'Raleway', sans-serif;
+}
+
+#presentation h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #00bfff;
+}
+
+.presentation1 {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .presentation1 {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+
+.photo img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00bfff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+/*
+.presentation-text {
+  max-width: 600px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.photo {
+  margin-right: 30px;
+}
+
+#presentation h1 {
+  margin-left: 10px;
+}
+
+#presentation h3 {
+  margin-top: 0;
+}*/
+
+#portfolio {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 40px 20px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+#portfolio h1, #portfolio h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.projets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.projet {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.projet:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 255, 0.7);
+}
+
+.projet img {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.projet p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.resume-download {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.pdf-logo {
+  height: 80px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.pdf-logo:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------- COMPÉTENCES ---------- */
+/* Section compétences */
+#competences {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f8f8f8;
+}
+
+.competences-liste {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.competence {
+  width: 180px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.competence:hover {
+  transform: translateY(-5px);
+}
+
+.competence-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+.competence span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.barre-progress {
+  background-color: #e0e0e0;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.barre-progress > div {
+  height: 100%;
+  background-color: #007bff;
+  animation: grow 1.5s ease-out forwards;
+}
+
+/* Personnalisation des largeurs de chaque compétence */
+.barre-html      { width: 95%; }
+.barre-css       { width: 90%; }
+.barre-js        { width: 85%; }
+.barre-php       { width: 75%; }
+.barre-mysql     { width: 70%; }
+.barre-csharp    { width: 60%; }
+.barre-wordpress { width: 80%; }
+
+@keyframes grow {
+  from { width: 0; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- CV / Résumé ---------- */
+.resume-download {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.pdf-logo {
+  height: 80px;
+  width: auto;
+  margin-top: 10px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: grey;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+footer h1 {
+  margin-bottom: 20px;
+}
+
+footer a {
+  margin: 0 15px;
+  color: white;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: #00bfff;
+}
+
+/* ---------- FONT AWESOME ---------- */
+.fa-brands, .fa-solid {
+  font-size: 2rem;
+}
+
+
+
+
+
+/* ---------- LOADER ---------- */
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #0f2027;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader {
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  background-color: #00bfff;
+  border-radius: 50%;
+  animation: bounce 1.2s infinite ease-in-out;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+  } 
+  40% {
+    transform: scale(1);
+  }
+}
