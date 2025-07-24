@@ -1,0 +1,298 @@
+/* Styles for header */
+header {
+    background-color: grey;
+    display: flex;
+    justify-content: space-between; /* Répartit l'espace entre les éléments */
+    align-items: center; /* Centre verticalement les éléments */
+    padding: 20px 40px; /* Ajoute du padding pour l'espace intérieur */
+}
+
+h2 {
+    color: #fff; /* Couleur du texte pour les en-têtes */
+}
+
+.nav_bar {
+    margin-top: 10px;
+}
+
+.contenair_links a {
+    margin-right: 20px; /* Espacement entre les liens dans la barre de navigation */
+    color: #fff; /* Couleur du texte pour les liens */
+    text-decoration: none;
+}
+
+.contenair_links a:hover {
+    color: #ff7f0e; /* Couleur du texte au survol des liens */
+}
+
+/* Styles for haut */
+.haut {
+    background-image: url("images/Capture d'écran dev web.png");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+/* Styles for presentation section */
+#presentation {
+    background-color: #222; /* Couleur de fond pour la section de présentation */
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.presentation1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styles pour l'animation de la machine à écrire */
+.typing::after {
+    content: '|'; /* Afficher un curseur clignotant après le texte */
+    animation: typing 1s steps(1) infinite;
+}
+
+@keyframes typing {
+    0% { content: ""; } /* Commencer avec du texte vide */
+    50% { content: "Codage en cours..."; } /* Texte à mi-chemin */
+    100% { content: "Codage en cours..."; } /* Texte complet */
+}
+
+
+.presentation1 .photo {
+    margin-bottom: 20px;
+}
+
+/* Styles for portfolio section */
+#portfolio {
+    background-color: #444; /* Couleur de fond pour la section du portfolio */
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.projets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projet {
+    width: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.projet img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Coins arrondis pour les images */
+    transition: transform 0.3s ease; /* Transition pour l'effet de survol */
+}
+
+.projet img:hover {
+    transform: scale(1.1); /* Zoom sur l'image au survol */
+}
+
+.resume-download {
+    margin-top: 50px;
+}
+
+.pdf-logo {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Styles pour la section Compétences */
+#competences {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.competences-liste {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.competence {
+    width: 150px;
+    margin: 20px;
+}
+
+.competence i {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #007bff; /* Couleur de l'icône */
+}
+
+.competence span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.barre-progress {
+    background-color: #ddd; /* Couleur de fond de la barre de progression */
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Animations pour les barres de progression */
+.barre-html {
+    width: 100%; /* Barre de progression HTML au maximum */
+    background-color: #007bff; /* Couleur de la barre de progression HTML */
+    height: 100%;
+}
+
+.barre-css {
+    width: 100%; /* Barre de progression CSS au maximum */
+    background-color: #007bff; /* Couleur de la barre de progression CSS */
+    height: 100%;
+}
+
+.barre-js {
+    width: 80%;
+    background-color: #007bff; /* Couleur de la barre de progression JavaScript */
+    height: 100%;
+}
+
+.barre-php {
+    width: 70%; 
+    background-color: #007bff; /* Couleur de la barre de progression PHP */
+    height: 100%;
+}
+
+.barre-mysql {
+    width: 60%; 
+    background-color: #007bff; /* Couleur de la barre de progression MySQL */
+    height: 100%;
+}
+
+.barre-csharp {
+    width: 50%; 
+    background-color: #007bff; /* Couleur de la barre de progression C# */
+    height: 100%;
+}
+
+.barre-wordpress {
+    width: 90%; 
+    background-color: #007bff; /* Couleur de la barre de progression WordPress */
+    height: 100%;
+}
+@keyframes html-animation {
+    from { width: 0%; }
+    to { width: 90%; } /* Ajustez la largeur finale en fonction du niveau de compétence */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles pour le footer */
+footer {
+    background-color: #333; /* Nouvelle couleur de fond pour le footer */
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Affichage en colonne pour empiler les éléments */
+    align-items: center; /* Centrage horizontal */
+    max-width: 1200px; /* Largeur maximale pour le contenu du footer */
+    margin: 0 auto; /* Centrage horizontal */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between; /* Espacement égal entre les icônes */
+    width: 100%; /* Utilisation de toute la largeur disponible */
+    max-width: 300px; /* Largeur maximale pour limiter l'espacement */
+    margin-top: 20px; /* Ajout d'un espace entre le texte et les icônes */
+}
+
+
+.social-icons a {
+    margin: 0 10px; /* Espacement entre les icônes */
+    color: #fff; /* Couleur par défaut */
+    transition: color 0.3s ease; /* Transition de couleur au survol */
+}
+
+.social-icons a:hover {
+    color: #ff7f0e; /* Couleur au survol */
+}
+
+/* Animation de survol pour les liens */
+.contenair_links a {
+    transition: color 0.3s ease; /* Transition de couleur au survol */
+}
+
+.contenair_links a:hover {
+    color: #ff7f0e; /* Couleur au survol */
+}
+
+/* Animation de zoom pour les images du portfolio */
+.projet img {
+    transition: transform 0.3s ease; /* Transition de transformation au survol */
+}
+
+.projet img:hover {
+    transform: scale(1.1); /* Zoom sur l'image au survol */
+}
+
+/* Animation d'entrée pour les sections */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Appliquer l'animation aux sections avec une durée plus longue */
+#presentation, #portfolio, footer {
+    opacity: 0; /* Définir l'opacité initiale à 0 */
+    transform: translateY(20px); /* Déplacer les sections vers le bas */
+    animation: fadeInUp 2s ease forwards; /* Appliquer l'animation avec une durée de 1 seconde */
+}
+
+/* Lorsque la section devient visible */
+#presentation.visible, #portfolio.visible, footer.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
