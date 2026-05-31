@@ -13,8 +13,39 @@ export default function Portfolio() {
       <h2>Voici quelques exemples de projets professionnels réalisés</h2>
 
       <div className="projets">
+
+        {/* 🔵 Réseaux */}
         <article className="projet">
-          <a href="https://thipakan.github.io/Projet-3/" target="_blank" rel="noreferrer">
+          <Link to="/docker">
+            <p>Docker - Conteneurisation d’applications</p>
+          </Link>
+        </article>
+
+        <article className="projet">
+          <Link to="/haproxy">
+            <p>HAProxy - Load balancing & haute disponibilité</p>
+          </Link>
+        </article>
+
+        <article className="projet">
+          <Link to="/wazuh">
+            <p>Wazuh - Supervision et sécurité SIEM</p>
+          </Link>
+        </article>
+
+        <article className="projet">
+          <Link to="/packet-tracer">
+            <p>Cisco Packet Tracer - Simulation réseau</p>
+          </Link>
+        </article>
+
+        {/* 🟢 Dev */}
+        <article className="projet">
+          <a
+            href="https://thipakan.github.io/Projet-3/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={ohmyfood} alt="Projet OhMyFood" />
           </a>
           <p>Site mobile-first avec animations CSS</p>
@@ -40,6 +71,7 @@ export default function Portfolio() {
           </Link>
           <p>Développement SPA avec React et React Router</p>
         </article>
+
       </div>
 
       <div className="resume-download">
