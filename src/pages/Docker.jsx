@@ -6,43 +6,38 @@ export default function Docker() {
       <h2>Conteneurisation d’applications</h2>
 
       <p>
-        Ce projet a pour objectif de comprendre et mettre en place la
-        conteneurisation d’applications avec Docker afin de faciliter le
-        déploiement et l’isolation des environnements.
+        Ce projet m’a permis de découvrir et de mettre en pratique la
+        conteneurisation avec Docker. L’objectif était de comprendre comment
+        isoler une application et simplifier son déploiement sur différents
+        environnements.
       </p>
 
-      <h3>🎯 Objectifs</h3>
+      <h3>🎯 Objectif du projet</h3>
       <ul>
         <li>Comprendre le fonctionnement de Docker et des conteneurs</li>
-        <li>Créer des environnements isolés pour les applications</li>
-        <li>Faciliter le déploiement et la portabilité</li>
+        <li>Mettre en place des environnements isolés pour les applications</li>
+        <li>Faciliter le déploiement et garantir la portabilité</li>
       </ul>
 
-      <h3>🛠️ Technologies utilisées</h3>
+      <h3>🛠️ Mise en place</h3>
       <ul>
-        <li>Docker</li>
-        <li>Docker Compose</li>
-        <li>Linux</li>
-      </ul>
-
-      <h3>⚙️ Mise en œuvre</h3>
-      <ul>
-        <li>Création d’un Dockerfile pour construire une image</li>
+        <li>Création d’un Dockerfile pour construire l’image de l’application</li>
         <li>Utilisation de Docker Compose pour orchestrer plusieurs services</li>
-        <li>Isolation des environnements de développement</li>
+        <li>Mise en place d’un environnement de développement isolé</li>
       </ul>
 
       <h3>📌 Résultat</h3>
       <p>
-        Le projet permet de lancer une application complète en quelques
-        commandes, avec un environnement stable et reproductible.
+        L’application peut être lancée simplement avec quelques commandes,
+        dans un environnement stable et reproductible, sans dépendance à la
+        machine hôte.
       </p>
 
-      <h3>💡 Compétences acquises</h3>
+      <h3>💡 Ce que j’ai appris</h3>
       <ul>
-        <li>Conteneurisation d’applications</li>
-        <li>Gestion d’environnements Linux</li>
-        <li>Déploiement simplifié d’applications</li>
+        <li>Les bases de la conteneurisation d’applications</li>
+        <li>La gestion d’environnements Linux avec Docker</li>
+        <li>La mise en place de déploiements plus simples et reproductibles</li>
       </ul>
     </section>
   );
