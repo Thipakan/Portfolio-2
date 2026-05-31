@@ -10,6 +10,7 @@ import Contact from "./components/Contact";
 import Competences from "./components/Competences";
 
 // Pages projets individuelles
+import Docker from "./pages/Docker";
 import Kasa from "./pages/Kasa";
 import Kanap from "./pages/Kanap";
 import Mediatek from "./pages/Mediatek";
@@ -45,6 +46,7 @@ export default function App() {
             <Contact />
           </>
         } />
+        <Route path="/docker" element={<Docker />} />
         <Route path="/kasa" element={<Kasa />} />
         <Route path="/kanap" element={<Kanap />} />
         <Route path="/mediatek" element={<Mediatek />} />
