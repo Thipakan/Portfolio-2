@@ -10,11 +10,13 @@ export default function Portfolio() {
   return (
     <section id="portfolio">
       <h1>Portfolio</h1>
+
       <h2>Voici quelques exemples de projets professionnels réalisés</h2>
 
+      {/* 🔵 RÉSEAUX / INFRASTRUCTURE */}
+      <h3>Réseaux & Infrastructure</h3>
       <div className="projets">
 
-        {/* 🔵 Réseaux */}
         <article className="projet">
           <Link to="/docker">
             <p>Docker - Conteneurisation d’applications</p>
@@ -39,7 +41,12 @@ export default function Portfolio() {
           </Link>
         </article>
 
-        {/* 🟢 Dev */}
+      </div>
+
+      {/* 🟢 DÉVELOPPEMENT WEB */}
+      <h3>Développement Web</h3>
+      <div className="projets">
+
         <article className="projet">
           <a
             href="https://thipakan.github.io/Projet-3/"
@@ -74,6 +81,7 @@ export default function Portfolio() {
 
       </div>
 
+      {/* CV */}
       <div className="resume-download">
         <h3>Téléchargez mon CV :</h3>
         <a href={cvFile} target="_blank" rel="noreferrer">
