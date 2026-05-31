@@ -13,7 +13,7 @@ import Competences from "./components/Competences";
 import Docker from "./pages/Docker";
 import Haproxy from "./pages/Haproxy";
 import Wazuh from "./pages/Wazuh";
-import PacketTracer from "./pages/Packet-tracer";
+import PacketTracer from "./pages/Packettracer";
 import Kasa from "./pages/Kasa";
 import Kanap from "./pages/Kanap";
 import Mediatek from "./pages/Mediatek";
