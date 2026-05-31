@@ -46,7 +46,7 @@ export default function Portfolio() {
         </article>
 
         <article className="projet">
-          <Link to="/packet-tracer">
+          <Link to="/packettracer">
             <img src={packetTracer} alt="Packet Tracer" />
             <p>Cisco Packet Tracer - Simulation réseau</p>
           </Link>
