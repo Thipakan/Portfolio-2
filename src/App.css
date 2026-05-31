@@ -84,7 +84,7 @@ header {
 }
 
 /* ---------- HERO ---------- */
-.haut {
+/*.haut {
   position: relative;
   height: 500px;
   width: 100%;
@@ -112,6 +112,90 @@ header {
 .haut h2 {
   font-size: 2rem;
   margin-top: 10px;
+}*/
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: #0f2027;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  color: white;
+}
+
+/* Canvas particles */
+.particles {
+  position: absolute !important;
+  inset: 0;
+  z-index: 0;
+}
+
+/* Contenu au-dessus des particules */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+  padding: 20px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Titre principal */
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Sous-titre */
+.hero h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #93c5fd;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+/* Description */
+.subtitle {
+  font-size: 1rem;
+  line-height: 1.7;
+  opacity: 0.85;
+  color: #cbd5e1;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Animation entrée */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+    padding: 0 15px;
+  }
 }
 
 
