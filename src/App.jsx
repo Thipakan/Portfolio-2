@@ -52,7 +52,7 @@ export default function App() {
         <Route path="/docker" element={<Docker />} />
         <Route path="/haproxy" element={<Haproxy />} />
         <Route path="/wazuh" element={<Wazuh />} />
-        <Route path="/packet-tracer" element={<PacketTracer />} />
+        <Route path="/packettracer" element={<PacketTracer />} />
         <Route path="/kasa" element={<Kasa />} />
         <Route path="/kanap" element={<Kanap />} />
         <Route path="/mediatek" element={<Mediatek />} />
