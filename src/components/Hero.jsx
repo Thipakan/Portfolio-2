@@ -32,7 +32,7 @@ export default function Hero() {
     <h2>Administrateur Systèmes &amp; Réseaux </h2>
 
     <p className="subtitle">
-        Mastère Cybersécurité &amp; Réseaux | 3 ans d'expérience professionnelle
+        Mastère Cybersécurité &amp; Réseaux | 3 ans d'expérience professionnelle 
     </p>
     </div>
   );
