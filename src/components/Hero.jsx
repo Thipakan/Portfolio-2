@@ -28,9 +28,12 @@ export default function Hero() {
         }}
       />
       <h1>Thipakan Sriranjan</h1>
-      <h2>Administrateur Systèmes & Réseaux
+     
+    <h2>Administrateur Systèmes &amp; Réseaux Junior</h2>
 
-Ancien développeur web avec 3 ans d'expérience en alternance, actuellement en Mastère Cybersécurité & Réseaux.</h2>
+    <p class="subtitle">
+        Mastère Cybersécurité &amp; Réseaux | 3 ans d'expérience professionnelle
+    </p>
     </div>
   );
 }
