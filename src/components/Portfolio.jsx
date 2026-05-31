@@ -1,10 +1,17 @@
 import { Link } from "react-router-dom";
+
 import ohmyfood from "../assets/logo-ohmyfood.png";
 import kanap from "../assets/logo-kanap.png";
 import mediatek from "../assets/logo-mediatek.png";
 import kasa from "../assets/logo-kasa.png";
 import pdfLogo from "../assets/logo-pdf.png";
 import cvFile from "../assets/cv-thipakan.pdf";
+
+// 🧠 Réseaux / infra logos
+import docker from "../assets/logo_docker.png";
+import haproxy from "../assets/logo_haproxy.png";
+import wazuh from "../assets/logo_wazuh.png";
+import packetTracer from "../assets/logo_packet_tracer.png";
 
 export default function Portfolio() {
   return (
@@ -19,24 +26,28 @@ export default function Portfolio() {
 
         <article className="projet">
           <Link to="/docker">
+            <img src={docker} alt="Docker" />
             <p>Docker - Conteneurisation d’applications</p>
           </Link>
         </article>
 
         <article className="projet">
           <Link to="/haproxy">
+            <img src={haproxy} alt="HAProxy" />
             <p>HAProxy - Load balancing & haute disponibilité</p>
           </Link>
         </article>
 
         <article className="projet">
           <Link to="/wazuh">
+            <img src={wazuh} alt="Wazuh" />
             <p>Wazuh - Supervision et sécurité SIEM</p>
           </Link>
         </article>
 
         <article className="projet">
           <Link to="/packet-tracer">
+            <img src={packetTracer} alt="Packet Tracer" />
             <p>Cisco Packet Tracer - Simulation réseau</p>
           </Link>
         </article>
@@ -61,22 +72,22 @@ export default function Portfolio() {
         <article className="projet">
           <Link to="/kanap">
             <img src={kanap} alt="Projet Kanap" />
+            <p>Site e-commerce avec intégration JS / API</p>
           </Link>
-          <p>Site e-commerce avec intégration JS / API</p>
         </article>
 
         <article className="projet">
           <Link to="/mediatek">
             <img src={mediatek} alt="Projet Mediatek" />
+            <p>Évolution d’une application Symfony / MySQL</p>
           </Link>
-          <p>Évolution d’une application Symfony / MySQL</p>
         </article>
 
         <article className="projet">
           <Link to="/kasa">
             <img src={kasa} alt="Projet Kasa" />
+            <p>Développement SPA avec React et React Router</p>
           </Link>
-          <p>Développement SPA avec React et React Router</p>
         </article>
 
       </div>
