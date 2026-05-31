@@ -13,7 +13,7 @@ import Competences from "./components/Competences";
 import Docker from "./pages/Docker";
 import Haproxy from "./pages/Haproxy";
 import Wazuh from "./pages/Wazuh";
-import PacketTracer from "./pages/Packettracer";
+import PacketTracer from "./pages/Packet Tracer";
 import Kasa from "./pages/Kasa";
 import Kanap from "./pages/Kanap";
 import Mediatek from "./pages/Mediatek";
@@ -52,7 +52,7 @@ export default function App() {
         <Route path="/docker" element={<Docker />} />
         <Route path="/haproxy" element={<Haproxy />} />
         <Route path="/wazuh" element={<Wazuh />} />
-        <Route path="/packet-tracer" element={<Packet-tracer />} />
+        <Route path="/packet tracer" element={<PacketTracer />} />
         <Route path="/kasa" element={<Kasa />} />
         <Route path="/kanap" element={<Kanap />} />
         <Route path="/mediatek" element={<Mediatek />} />
