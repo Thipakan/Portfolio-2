@@ -1,6 +1,6 @@
 import "./PacketTracer.css";
 
-export default function Packet() {
+export default function PacketTracer() {
   return (
     <section className="project-page">
       <h1>Projet Packet Tracer</h1>
