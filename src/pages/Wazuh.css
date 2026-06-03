@@ -50,6 +50,25 @@
   transition: 0.2s ease;
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
 .project-page ul li:hover {
   background: #334155;
   transform: translateX(4px);
