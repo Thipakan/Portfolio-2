@@ -1,9 +1,9 @@
 import "./Wazuh.css";
 
 export default function Wazuh() {
-  // Génère automatiquement les 17 images
+  // Génère automatiquement les 15 images
   const images = Array.from(
-    { length: 17 },
+    { length: 15 },
     (_, i) => `/screens/wazuh${i + 1}.png`
   );
 
