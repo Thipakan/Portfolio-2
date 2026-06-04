@@ -11,7 +11,7 @@ import cvFile from "../assets/cv-thipakan.pdf";
 import docker from "../assets/logo_docker.png";
 import haproxy from "../assets/logo_haproxy.png";
 import wazuh from "../assets/logo_wazuh.png";
-import awsdesktop from ""../assets/logo_aws.png";
+import awsdesktop from "../assets/logo_aws.png";
 import packetTracer from "../assets/logo_packet_tracer.png";
 
 export default function Portfolio() {
