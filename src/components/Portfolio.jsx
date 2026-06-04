@@ -46,6 +46,14 @@ export default function Portfolio() {
           </Link>
         </article>
 
+        
+        <article className="projet">
+          <Link to="/awsdesktop">
+            <img src={awsdesktop} alt="AwsDesktop" />
+            <p>Déploiement d’un bureau Linux distant sur AWS EC2</p>
+          </Link>
+        </article>
+
         <article className="projet">
           <Link to="/packettracer">
             <img src={packetTracer} alt="Packet Tracer" />
