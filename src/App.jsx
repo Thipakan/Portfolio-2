@@ -13,6 +13,7 @@ import Competences from "./components/Competences";
 import Docker from "./pages/Docker";
 import Haproxy from "./pages/Haproxy";
 import Wazuh from "./pages/Wazuh";
+import AwsDesktop from "./pages/AwsDesktop";
 import PacketTracer from "./pages/PacketTracer";
 import Kasa from "./pages/Kasa";
 import Kanap from "./pages/Kanap";
@@ -52,6 +53,7 @@ export default function App() {
         <Route path="/docker" element={<Docker />} />
         <Route path="/haproxy" element={<Haproxy />} />
         <Route path="/wazuh" element={<Wazuh />} />
+        <Route path="/awsdesktop" element={<AwsDesktop />} />
         <Route path="/packettracer" element={<PacketTracer />} />
         <Route path="/kasa" element={<Kasa />} />
         <Route path="/kanap" element={<Kanap />} />
