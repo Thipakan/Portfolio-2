@@ -4,7 +4,7 @@ export default function Wazuh() {
   // Génère automatiquement les 15 images
   const images = Array.from(
     { length: 15 },
-    (_, i) => `/screens/wazuh${i + 1}.png`
+    (_, i) => `/screens/wazuh/wazuh${i + 1}.png`
   );
 
   return (
