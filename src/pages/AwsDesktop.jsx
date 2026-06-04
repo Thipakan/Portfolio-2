@@ -4,7 +4,7 @@ export default function AwsDesktop() {
   // 5 images uniquement
   const images = Array.from(
     { length: 5 },
-    (_, i) => `/screens/aws-desktop${i + 1}.png`
+    (_, i) => `/screens/aws-desktop/aws-desktop${i + 1}.png`
   );
 
   return (
