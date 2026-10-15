@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Loader from "./components/Loader";
 
 import Header from "./components/Header";
@@ -18,11 +18,9 @@ import PacketTracer from "./pages/PacketTracer";
 import Kasa from "./pages/Kasa";
 import Kanap from "./pages/Kanap";
 import Mediatek from "./pages/Mediatek";
+import Supervision from "./pages/Supervision";
+
 import "./App.css";
-
-
-
-
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -40,16 +38,21 @@ export default function App() {
   return (
     <Router>
       <Header />
+
       <Routes>
-        <Route path="/" element={
-          <>
-            <Hero />
-            <Presentation />
-            <Portfolio />
-            <Competences />
-            <Contact />
-          </>
-        } />
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <Presentation />
+              <Portfolio />
+              <Competences />
+              <Contact />
+            </>
+          }
+        />
+
         <Route path="/docker" element={<Docker />} />
         <Route path="/haproxy" element={<Haproxy />} />
         <Route path="/wazuh" element={<Wazuh />} />
@@ -58,6 +61,7 @@ export default function App() {
         <Route path="/kasa" element={<Kasa />} />
         <Route path="/kanap" element={<Kanap />} />
         <Route path="/mediatek" element={<Mediatek />} />
+        <Route path="/supervision" element={<Supervision />} />
       </Routes>
     </Router>
   );
