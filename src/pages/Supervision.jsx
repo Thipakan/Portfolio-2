@@ -1,6 +1,6 @@
 import "./Supervision.css";
 
-import vm1MiseAJour from "../supervision-assets/vm1-01-mise-a-jour.png";
+import vm1MiseAJour from "src/supervision-assets/vm1-01-mise-a-jour.png";
 import vm1PrerequisDocker from "../supervision-assets/vm1-02-prerequis-docker.png";
 import vm1InstallationDocker from "../supervision-assets/vm1-03-installation-docker.png";
 import vm1DockerCompose from "../supervision-assets/vm1-04-docker-compose.png";
