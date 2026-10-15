@@ -7,12 +7,13 @@ import kasa from "../assets/logo-kasa.png";
 import pdfLogo from "../assets/logo-pdf.png";
 import cvFile from "../assets/cv-thipakan.pdf";
 
-// 🧠 Réseaux / infra logos
+// Réseaux / infrastructure
 import docker from "../assets/logo_docker.png";
 import haproxy from "../assets/logo_haproxy.png";
 import wazuh from "../assets/logo_wazuh.png";
 import awsdesktop from "../assets/logo_aws.png";
 import packetTracer from "../assets/logo_packet_tracer.png";
+import supervision from "../assets/logo_supervision.svg";
 
 export default function Portfolio() {
   return (
@@ -21,14 +22,23 @@ export default function Portfolio() {
 
       <h2>Voici quelques exemples de projets professionnels réalisés</h2>
 
-      {/* 🔵 RÉSEAUX / INFRASTRUCTURE */}
+      {/* Réseaux / infrastructure */}
       <h3>Réseaux & Infrastructure</h3>
       <div className="projets">
-
         <article className="projet">
           <Link to="/docker">
             <img src={docker} alt="Docker" />
             <p>Docker - Conteneurisation d’applications</p>
+          </Link>
+        </article>
+
+        <article className="projet">
+          <Link to="/supervision">
+            <img
+              src={supervision}
+              alt="Plateforme de supervision de télémétrie"
+            />
+            <p>Supervision de télémétrie - Prometheus, Grafana & IoT</p>
           </Link>
         </article>
 
@@ -46,27 +56,24 @@ export default function Portfolio() {
           </Link>
         </article>
 
-        
         <article className="projet">
           <Link to="/awsdesktop">
-            <img src={awsdesktop} alt="AwsDesktop" />
+            <img src={awsdesktop} alt="AWS Desktop" />
             <p>Déploiement d’un bureau Linux distant sur AWS EC2</p>
           </Link>
         </article>
 
         <article className="projet">
           <Link to="/packettracer">
-            <img src={packetTracer} alt="Packet Tracer" />
+            <img src={packetTracer} alt="Cisco Packet Tracer" />
             <p>Cisco Packet Tracer - Simulation réseau</p>
           </Link>
         </article>
-
       </div>
 
-      {/* 🟢 DÉVELOPPEMENT WEB */}
+      {/* Développement web */}
       <h3>Développement Web</h3>
       <div className="projets">
-
         <article className="projet">
           <a
             href="https://thipakan.github.io/Projet-3/"
@@ -74,8 +81,8 @@ export default function Portfolio() {
             rel="noreferrer"
           >
             <img src={ohmyfood} alt="Projet OhMyFood" />
+            <p>Site mobile-first avec animations CSS</p>
           </a>
-          <p>Site mobile-first avec animations CSS</p>
         </article>
 
         <article className="projet">
@@ -98,7 +105,6 @@ export default function Portfolio() {
             <p>Développement SPA avec React et React Router</p>
           </Link>
         </article>
-
       </div>
 
       {/* CV */}
@@ -111,3 +117,4 @@ export default function Portfolio() {
     </section>
   );
 }
+
