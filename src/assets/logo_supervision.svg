@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title description">
+  <title id="title">Supervision de télémétrie</title>
+  <desc id="description">Écran de supervision avec graphiques et trois serveurs connectés</desc>
+
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a" />
+      <stop offset="1" stop-color="#1e3a8a" />
+    </linearGradient>
+    <linearGradient id="chart" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8" />
+      <stop offset="1" stop-color="#34d399" />
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="360" rx="28" fill="url(#background)" />
+
+  <rect x="52" y="42" width="536" height="226" rx="16" fill="#f8fafc" />
+  <rect x="52" y="42" width="536" height="40" rx="16" fill="#e2e8f0" />
+  <circle cx="76" cy="62" r="6" fill="#ef4444" />
+  <circle cx="96" cy="62" r="6" fill="#f59e0b" />
+  <circle cx="116" cy="62" r="6" fill="#22c55e" />
+
+  <rect x="78" y="104" width="124" height="60" rx="10" fill="#dbeafe" />
+  <rect x="218" y="104" width="124" height="60" rx="10" fill="#dcfce7" />
+  <rect x="358" y="104" width="204" height="60" rx="10" fill="#fef3c7" />
+
+  <path
+    d="M86 230 C126 204 146 222 178 187 C214 148 252 222 292 190 C328 160 350 198 384 176 C426 150 450 210 490 168 C520 136 540 154 558 132"
+    fill="none"
+    stroke="url(#chart)"
+    stroke-width="8"
+    stroke-linecap="round"
+  />
+
+  <g fill="#38bdf8">
+    <circle cx="86" cy="230" r="7" />
+    <circle cx="178" cy="187" r="7" />
+    <circle cx="292" cy="190" r="7" />
+    <circle cx="384" cy="176" r="7" />
+    <circle cx="490" cy="168" r="7" />
+    <circle cx="558" cy="132" r="7" />
+  </g>
+
+  <g stroke="#93c5fd" stroke-width="4" fill="#172554">
+    <rect x="120" y="296" width="96" height="34" rx="8" />
+    <rect x="272" y="296" width="96" height="34" rx="8" />
+    <rect x="424" y="296" width="96" height="34" rx="8" />
+    <path d="M216 313H272M368 313H424" />
+  </g>
+
+  <g fill="#dbeafe">
+    <circle cx="140" cy="307" r="4" />
+    <circle cx="140" cy="319" r="4" />
+    <circle cx="292" cy="307" r="4" />
+    <circle cx="292" cy="319" r="4" />
+    <circle cx="444" cy="307" r="4" />
+    <circle cx="444" cy="319" r="4" />
+  </g>
+</svg>
