@@ -1,17 +1,17 @@
 import "./Supervision.css";
 
-import vm1MiseAJour from "./supervision-assets/vm1-01-mise-a-jour.png";
-import vm1PrerequisDocker from "./supervision-assets/vm1-02-prerequis-docker.png";
-import vm1InstallationDocker from "./supervision-assets/vm1-03-installation-docker.png";
-import vm1DockerCompose from "./supervision-assets/vm1-04-docker-compose.png";
-import vm1Arborescence from "./supervision-assets/vm1-05-arborescence.png";
-import vm1Conteneurs from "./supervision-assets/vm1-06-conteneurs.png";
-import vm1TargetsPrometheus from "./supervision-assets/vm1-07-targets-prometheus.png";
-import vm1MetriquesIot from "./supervision-assets/vm1-08-metriques-iot.png";
-import vm2Creation from "./supervision-assets/vm2-01-creation.png";
-import vm2InstallationDocker from "./supervision-assets/vm2-02-installation-docker.png";
-import vm3Ressources from "./supervision-assets/vm3-01-ressources.png";
-import vm3InstallationTelegraf from "./supervision-assets/vm3-02-installation-telegraf.png";
+import vm1MiseAJour from "../assets/vm1-01-mise-a-jour.png";
+import vm1PrerequisDocker from "../assets/vm1-02-prerequis-docker.png";
+import vm1InstallationDocker from "../assets/vm1-03-installation-docker.png";
+import vm1DockerCompose from "../assets/vm1-04-docker-compose.png";
+import vm1Arborescence from "../assets/vm1-05-arborescence.png";
+import vm1Conteneurs from "../assets/vm1-06-conteneurs.png";
+import vm1TargetsPrometheus from "../assets/vm1-07-targets-prometheus.png";
+import vm1MetriquesIot from "../assets/vm1-08-metriques-iot.png";
+import vm2Creation from "../assets/vm2-01-creation.png";
+import vm2InstallationDocker from "../assets/vm2-02-installation-docker.png";
+import vm3Ressources from "../assets/vm3-01-ressources.png";
+import vm3InstallationTelegraf from "../assets/vm3-02-installation-telegraf.png";
 
 const captures = {
   vm1: [
