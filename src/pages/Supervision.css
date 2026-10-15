@@ -1,156 +1,97 @@
 .project-page.supervision-page {
-  --supervision-accent: #2563eb;
-  --supervision-accent-dark: #1e40af;
-  --supervision-soft: #eff6ff;
-  --supervision-border: #dbeafe;
-  --supervision-text: #1f2937;
-  --supervision-muted: #64748b;
-
-  width: min(100% - 2rem, 980px);
-  margin: 0 auto;
-  padding: clamp(2rem, 5vw, 4.5rem) 0;
-  color: var(--supervision-text);
-  line-height: 1.75;
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #0f172a;
+  color: #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
 }
 
 .supervision-page .project-header {
-  margin-bottom: 2rem;
+  margin-bottom: 30px;
 }
 
 .supervision-page .project-label {
-  margin: 0 0 0.4rem;
-  color: var(--supervision-accent);
-  font-size: 0.82rem;
+  margin-bottom: 8px;
+  color: #60a5fa;
+  font-size: 0.85rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .supervision-page h1 {
-  margin: 0;
-  color: #0f172a;
-  font-size: clamp(2.1rem, 6vw, 4rem);
-  line-height: 1.08;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 2.5rem;
+  line-height: 1.2;
 }
 
 .supervision-page h2 {
-  margin: 0.75rem 0 1.5rem;
-  color: var(--supervision-accent-dark);
-  font-size: clamp(1.2rem, 3vw, 1.65rem);
-  font-weight: 600;
+  margin-bottom: 30px;
+  color: #93c5fd;
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 
 .supervision-page h3 {
-  margin: 2.5rem 0 0.8rem;
-  color: #0f172a;
-  font-size: 1.35rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border-left: 4px solid #3b82f6;
+  color: #60a5fa;
+  font-size: 1.2rem;
 }
 
 .supervision-page h4 {
-  margin: 0 0 0.45rem;
-  color: var(--supervision-accent-dark);
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #ffffff;
   font-size: 1.05rem;
 }
 
 .supervision-page p {
-  margin: 0 0 1rem;
+  margin-bottom: 15px;
+  color: #cbd5e1;
 }
 
 .supervision-page .project-intro {
   max-width: 760px;
-  color: #475569;
-  font-size: 1.08rem;
+  font-size: 1.05rem;
 }
 
 .supervision-page ul {
-  margin: 0;
-  padding-left: 1.4rem;
+  list-style: none;
+  padding-left: 0;
 }
 
-.supervision-page li {
-  margin-bottom: 0.45rem;
-  padding-left: 0.25rem;
+.supervision-page ul li {
+  margin-bottom: 10px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: #1e293b;
+  color: #e2e8f0;
+  transition: 0.2s ease;
 }
 
-.supervision-page li::marker {
-  color: var(--supervision-accent);
+.supervision-page ul li:hover {
+  background: #334155;
+  transform: translateX(4px);
 }
 
 .supervision-page .technologies {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.65rem;
-  margin: 1.5rem 0 2.5rem;
+  gap: 10px;
+  margin-bottom: 30px;
 }
 
 .supervision-page .technologies span {
-  padding: 0.4rem 0.8rem;
-  border: 1px solid var(--supervision-border);
+  padding: 7px 12px;
+  border: 1px solid #334155;
   border-radius: 999px;
-  background: var(--supervision-soft);
-  color: var(--supervision-accent-dark);
-  font-size: 0.88rem;
-  font-weight: 600;
-}
+  background: #1e293b;
 
-.supervision-page .architecture-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-}
-
-.supervision-page .architecture-card {
-  padding: 1.25rem;
-  border: 1px solid #e2e8f0;
-  border-radius: 14px;
-  background: #ffffff;
-  box-shadow: 0 8px 24px rgb(15 23 42 / 6%);
-}
-
-.supervision-page .architecture-card p {
-  margin: 0;
-  color: var(--supervision-muted);
-  font-size: 0.95rem;
-}
-
-.supervision-page .result-card {
-  margin-top: 2.75rem;
-  padding: clamp(1.25rem, 4vw, 2rem);
-  border: 1px solid var(--supervision-border);
-  border-left: 5px solid var(--supervision-accent);
-  border-radius: 12px;
-  background: linear-gradient(135deg, #eff6ff 0%, #f8fafc 100%);
-}
-
-.supervision-page .result-card h3 {
-  margin-top: 0;
-}
-
-.supervision-page .result-card p:last-child {
-  margin-bottom: 0;
-}
-
-@media (max-width: 760px) {
-  .project-page.supervision-page {
-    width: min(100% - 1.25rem, 980px);
-  }
-
-  .supervision-page .architecture-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .supervision-page .architecture-card {
-    padding: 1rem;
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .supervision-page .architecture-card {
-    transition: transform 180ms ease, box-shadow 180ms ease;
-  }
-
-  .supervision-page .architecture-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 30px rgb(15 23 42 / 10%);
-  }
-}
