@@ -12,13 +12,17 @@
 
 .supervision-page .supervision-header {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
   padding: 0;
   min-height: 0;
   background: transparent;
   color: inherit;
   text-align: left;
   box-shadow: none;
+}
+
+.supervision-page .supervision-header h2 {
+  margin-bottom: 0;
 }
 
 .supervision-page .project-label {
@@ -66,7 +70,10 @@
 }
 
 .supervision-page .project-intro {
-  max-width: 760px;
+  max-width: 100%;
+  margin-bottom: 30px;
+  padding: 6px 0 6px 16px;
+  border-left: 4px solid #3b82f6;
   font-size: 1.05rem;
 }
 
@@ -87,11 +94,4 @@
 .supervision-page ul li:hover {
   background: #334155;
   transform: translateX(4px);
-}
-
-.supervision-page .technologies {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 30px;
 
