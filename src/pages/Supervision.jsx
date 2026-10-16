@@ -13,11 +13,6 @@ import vm2InstallationDocker from "../assets/vm2-02-installation-docker.png";
 import vm3Ressources from "../assets/vm3-01-ressources.png";
 import vm3InstallationTelegraf from "../assets/vm3-02-installation-telegraf.png";
 
-<img
-  src={vm1MiseAJour}
-  alt="Test VM1"
-  style={{ width: "100%" }}
-/>
 
 const captures = {
   vm1: [
