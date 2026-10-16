@@ -1,5 +1,5 @@
 import "./Supervision.css";
-
+ 
 const captures = {
   vm1: [
     {
