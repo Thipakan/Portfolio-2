@@ -2,15 +2,15 @@
         <p className="project-label">Projet infrastructure et monitoring</p>
         <h1>Plateforme de supervision de télémétrie</h1>
         <h2>Prometheus, Grafana, Docker et IoT</h2>
+      </header>
 
-        <p className="project-intro">
+      <p className="project-intro">
           Ce projet m’a permis de construire une plateforme de supervision
           répartie sur trois machines virtuelles. L’objectif était de
           centraliser des métriques système, Docker et IoT afin de pouvoir
           vérifier l’état des services depuis Prometheus.
-        </p>
-      </header>
-
+      </p>
+                
       <div className="technologies" aria-label="Technologies utilisées">
         <span>Linux</span>
         <span>Docker Compose</span>
